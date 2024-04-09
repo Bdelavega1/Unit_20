@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brian's Portfolio</title>
+    <link rel="stylesheet" href="CSS/styles.css">           <!-- Linking external CSS file -->
+    <!-- Add the jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+</head>
+    <body>
+<!-- Start of Header Section -->
+      
+<header>
+    <!-- Start of logo -->
+   <div class="logo">
+       <img src="/images/BDLV.png" alt="Logo"> <!-- Inserting the logo -->
+   </div>
+       <nav>
+        <ul class="nav__links">
+            <li><a href="/UX_UI_HW_18./my-work.html">Projects</a></li>   <!-- Navigation option 1 Projects -->
+            <li><a href="/UX_UI_HW_18./ux-skills.html">Skills</a></li>     <!-- Navigation option 2 Skills -->
+           <li><a href="#">Resume</a></li>     <!-- Navigation option 3 Resume -->
+           <li><a href="/UX_UI_HW_18./index.html">Cool Stuff</a></li> <!-- Navigation option 4 Cool Stuff -->
+       </ul>
+   </nav>
+</header>
+
+<!-- End of Header Section -->
+
+
+
+
+        <!-- My UX Skills Section Starts Here -->
+<section class="mySkills">
+
+    <h1>My UX Skills</h1> <!-- This is the section header, acting as the title for the UX Skills section -->
+
+    <div class="flexContainer"> <!-- Flex container to hold and position skill items -->
+
+        <!-- Each "skill" div represents a box section for specific skill entry -->
+
+        <!--Skill 1 User Research section starts here-->
+
+        <div class="skill User Research">
+            <img src="/images/User Research.png">  <!-- Image representing User Research -->
+
+            <h3>User Research</h3>  <!-- Heading for User Research-->
+
+              <!-- Paragraph describing how the skill is applied -->
+            <p>In my UX projects, user research is the cornerstone that informs and guides the design process.
+                Starting with a clear set of research objectives, I choose methodologies tailored to each project's
+                unique needs—be it in-depth interviews for qualitative insights or surveys for quantitative data.
+                For example, in one project,.............. Using these insights, I ...</p>
+    
+        </div>
+
+        <!--Skill 1 User Research section ends here-->
+
+
+        <!--Skill 2 Information Architecture section starts here-->
+        <div class="skill 2">
+            <img src="/images/Information Architecture.jpg"> <!-- Image representing Information Architecture -->
+
+            <h3>Information Architecture</h3>   <!-- Heading for Information Architecture-->
+
+            <p>This process begins with understanding the content and context of the information, 
+                followed by organizing, structuring, and labeling content in an intuitive and accessible way.
+                I construct clear hierarchies and navigation pathways that are essential for seamless user experiences
+                I ensure the architecture supports both user needs and business objectives, thereby creating a solid foundation for engaging and effective UX design</p>
+        </div>
+           <!--Skill 2 Information Architecture section ends  here-->
+
+         <!--Skill 3 Prototyping section starts here-->
+        <div class="skill 3">
+            <img src="/images/Prototype.jpg">    <!-- Image representing prototyping -->
+            <h3>Prototyping & Wireframing</h3> <!-- Heading forPrototyping & Wireframing-->
+            <!-- Paragraph describing how the skill is applied -->
+            <p> I harness the power of prototyping and wireframing,turning ideas into tangible designs, 
+                From paper sketches to interactive digital prototypes, I iterate design solutions that speak directly to user needs.
+                My proficiency with Figma allows me to create both low and high-fidelity prototypes, 
+                facilitating early testing and feedback incorporation.</p>
+                    
+        </div>
+         <!--Skill 3 Prototyping section ends here-->
+
+    </div>
+</section>
+
+ <!-- My UX Skills Section Ends Here -->
+
+
+
+
+
+
+
+
+<!-- Footer Section -->
+<footer>
+    <p>&copy; Brian De La Vega 2024</p> <!-- Footer content -->
+    <p>Resume</p>
+    <p>bdelavega12@gmail.com</p>
+</footer>
+
+
+
+<!-- Start of your jQuery script -->
+<script>
+    $(document).ready(function() {
+
+        
+        // When a skill title is clicked
+        $('.skill h3').click(function() {
+            // Toggle the visibility of the paragraph below the clicked title
+            $(this).next('p').slideToggle('slow');
+        });
+    });
+    </script>
+
+</body>
+</html>
